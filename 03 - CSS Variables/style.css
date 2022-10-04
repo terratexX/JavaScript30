@@ -1,6 +1,11 @@
 /*
       misc styles, nothing to do with CSS variables
     */
+:root {
+  --color: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
 
 body {
   text-align: center;
@@ -17,4 +22,10 @@ body {
 
 input {
   width: 100px;
+}
+img {
+  border: var(--spacing);
+  border-color: var(--color);
+  border-style: solid;
+  filter: blur(var(--blur));
 }
